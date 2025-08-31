@@ -1,0 +1,138 @@
+/* Import Arabic fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap');
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Noto Sans Arabic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #2d3748;
+  background-color: #f7fafc;
+  direction: ltr;
+}
+
+/* Arabic RTL support */
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .chakra-input,
+[dir="rtl"] .chakra-textarea,
+[dir="rtl"] .chakra-select__field {
+  text-align: right;
+  direction: rtl;
+}
+
+[dir="rtl"] .chakra-select__icon {
+  left: 0.75rem;
+  right: auto;
+}
+
+[dir="rtl"] .chakra-button {
+  direction: rtl;
+}
+
+[dir="rtl"] .chakra-modal__close-btn {
+  left: 1rem;
+  right: auto;
+}
+
+[dir="rtl"] .chakra-tabs__tab {
+  direction: rtl;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #38b2ac;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #319795;
+}
+
+/* Loading animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Focus styles */
+.chakra-input:focus,
+.chakra-textarea:focus,
+.chakra-select__field:focus {
+  border-color: #38b2ac !important;
+  box-shadow: 0 0 0 1px #38b2ac !important;
+}
+
+/* Custom utility classes */
+.text-gradient {
+  background: linear-gradient(135deg, #38b2ac 0%, #319795 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Print styles */
+@media print {
+  body {
+    color: black;
+    background: white;
+  }
+  
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  
+  [dir="rtl"] .chakra-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .chakra-input,
+  .chakra-textarea,
+  .chakra-select__field {
+    border-width: 2px;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
