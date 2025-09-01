@@ -998,19 +998,7 @@ export default function EnhancedGiftPlatform() {
                 border: '1px solid rgba(255, 255, 255, 0.3)'
               }}>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1.5rem' }}>
-                  <div>
-                    <p style={{ color: '#6b7280', marginBottom: '0.5rem', fontWeight: '600' }}>
-                      <strong>رقم الطلب:</strong>
-                    </p>
-                    <p style={{ 
-                      color: '#7c3aed', 
-                      fontSize: '1.25rem', 
-                      fontWeight: 'bold',
-                      fontFamily: 'monospace'
-                    }}>
-                      #{Math.random().toString(36).substr(2, 9).toUpperCase()}
-                    </p>
-                  </div>
+                  
                   <div>
                     <p style={{ color: '#6b7280', marginBottom: '0.5rem', fontWeight: '600' }}>
                       <strong>وقت الاستجابة المتوقع:</strong>
