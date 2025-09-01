@@ -650,20 +650,7 @@ export default function EnhancedGiftPlatform() {
         > 
           <div style={styles.logoContainer}>
             <div style={styles.logoGlow}></div>
-            <img
-              src="./assets/LOG.PNG"
-              alt="شعار ASCEND"
-              style={{
-                ...styles.logo,
-                ...(hoveredCard === 'logo' ? {
-                  transform: 'scale(1.1) rotateY(10deg)',
-                  boxShadow: '0 20px 50px rgba(124, 58, 237, 0.4), 0 0 80px rgba(124, 58, 237, 0.2)',
-                  border: '4px solid rgba(124, 58, 237, 0.6)'
-                } : {})
-              }}
-              onMouseEnter={() => setHoveredCard('logo')}
-              onMouseLeave={() => setHoveredCard(null)}
-            />
+           
           </div>
 
           <h1 style={styles.heroTitle}>
