@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // API Configuration
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://gift-back.vercel.app/api';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://gift-back.onrender.com/api';
 
 // Create axios instance
 const api = axios.create({
