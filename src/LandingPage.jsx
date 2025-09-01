@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Gift, Star, Shield, Clock, Heart, Sparkles, CheckCircle, ArrowRight, Calendar, DollarSign, User, MessageCircle, Zap } from "lucide-react";
 import GiftForm from "./components/GiftForm"
-import Logo from "./assets/LOG.PNG";
+
 
 const styles = {
   container: {
@@ -651,7 +651,7 @@ export default function EnhancedGiftPlatform() {
           <div style={styles.logoContainer}>
             <div style={styles.logoGlow}></div>
             <img
-              src={Logo}
+              src="./assets/LOG.PNG"
               alt="شعار ASCEND"
               style={{
                 ...styles.logo,
